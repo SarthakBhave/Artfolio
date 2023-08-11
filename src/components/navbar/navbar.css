@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Work+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-left: 94px;
+    margin-right: 94px;
+
+}
+
+.logo {
+    font-size: 36px;
+    font-family: 'Playfair Display';
+    color: #fff;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    font-family: 'Work Sans', sans-serif;
+    color: #fff;
+    font-size: 24px;
+}
+
+.menu li {
+    margin-right: 24px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 2px;
+}
+
+.menu li::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #02b377;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.menu li:hover::before {
+    width: 100%;
+    left: 0;
+}
+.menu li .active {
+    color: #02b377;
+}
+.navlink {
+    text-decoration: none;
+    color: #fff;
+}
+
+.wallet-button {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: none;
+    font-size: 18px;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    border-color: #fff;
+    cursor: pointer;
+    align-items: center;
+}
+
+.wallet-button img{
+    padding-left: 10px;
+}
+
+.App {
+    text-align: center;
+}

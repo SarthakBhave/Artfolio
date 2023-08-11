@@ -1,0 +1,60 @@
+.tape-container {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.tape-1 {
+    position: relative;
+    height: 83px;
+    width: 100%;
+    background-color: #000;
+    margin-bottom: 70px;
+    overflow: hidden;
+}
+
+.tape-1 p {
+    position: absolute;
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.96px;
+    text-transform: uppercase;
+
+}
+
+.tape-1 p:nth-child(1) {
+    animation: scrollTextStart 8s infinite linear;
+}
+
+.tape-1 p:nth-child(2) {
+    animation: scrollTextEnd 8s infinite linear ;
+}
+
+
+@keyframes scrollTextStart {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scrollTextEnd {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
